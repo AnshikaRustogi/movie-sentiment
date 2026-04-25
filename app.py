@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 from preprocess import clean_text
 
-model = joblib.load('src/models/model.pkl')
-vectorizer = joblib.load('src/models/vectorizer.pkl')
+model = joblib.load('model.pkl')
+vectorizer = joblib.load('vectorizer.pkl')
 
 st.title("Movie Sentiment Analysis")
 
