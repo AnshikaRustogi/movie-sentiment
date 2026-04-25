@@ -1,9 +1,11 @@
-import re
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 
-# load stopwords
+import nltk
+nltk.download('stopwords')
+
+from nltk.corpus import stopwords
+
 stop_words = set(stopwords.words('english'))
+
 
 # keep important words like 'not'
 stop_words = stop_words - {'not', 'no', 'never'}
