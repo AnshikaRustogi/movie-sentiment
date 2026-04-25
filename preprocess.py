@@ -1,15 +1,12 @@
-
 import nltk
 nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 stop_words = set(stopwords.words('english'))
-
-
-# keep important words like 'not'
-stop_words = stop_words - {'not', 'no', 'never'}
-
 lemmatizer = WordNetLemmatizer()
 
 def clean_text(text):
