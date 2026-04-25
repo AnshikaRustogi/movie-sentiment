@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-from src.preprocess import clean_text
+from preprocess import clean_text
 
 model = joblib.load('src/models/model.pkl')
 vectorizer = joblib.load('src/models/vectorizer.pkl')
